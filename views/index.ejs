@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create User</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-zinc-900 text-white flex items-start justify-start p-6 font-sans">
+  <div class="bg-zinc-800 p-6 rounded-xl shadow-md w-64">
+    <!-- Read Users Link -->
+    <div class="mb-4">
+      <a href="/read"
+         class="text-blue-400 hover:text-blue-300 text-sm font-medium transition">Read Users</a>
+    </div>
+
+    <!-- Form Title -->
+    <h1 class="text-base font-semibold mb-4 text-white-400">Create User</h1>
+
+    <!-- Form -->
+    <form action="/create" method="post" class="flex flex-col space-y-3">
+      <input type="text" name="name" placeholder="name"
+             class="w-full px-3 py-2 bg-zinc-700 border border-zinc-600 rounded focus:outline-none focus:ring-1 focus:ring-indigo-500 placeholder-zinc-400 text-sm transition duration-150">
+
+      <input type="email" name="email" placeholder="email"
+             class="w-full px-3 py-2 bg-zinc-700 border border-zinc-600 rounded focus:outline-none focus:ring-1 focus:ring-indigo-500 placeholder-zinc-400 text-sm transition duration-150">
+
+      <input type="text" name="image" placeholder="image url"
+             class="w-full px-3 py-2 bg-zinc-700 border border-zinc-600 rounded focus:outline-none focus:ring-1 focus:ring-indigo-500 placeholder-zinc-400 text-sm transition duration-150">
+
+      <button type="submit"
+              class="w-full py-2 bg-indigo-600 hover:bg-indigo-500 rounded font-medium transition duration-150 text-sm">
+        Create User
+      </button>
+    </form>
+  </div>
+</body>
+
+</html>
